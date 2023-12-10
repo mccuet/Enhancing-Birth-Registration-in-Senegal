@@ -1,0 +1,3275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
+<codeBook ID="ddi2-1902319a-830f-401c-bfa8-0df0d990a2dc-idhs_00010.dat-www.idhsdata.org" version="2.5" xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Codebook for an IPUMS DHS Data Extract</titl>
+        <subTitl>DDI 2.5 metadata describing the extract file  'idhs_00010.dat'</subTitl>
+        <IDNo>ddi2-1902319a-830f-401c-bfa8-0df0d990a2dc-idhs_00010.dat-www.idhsdata.org</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2023-12-01">December 1, 2023</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>User Extract idhs_00010.dat</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">IPUMS</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="IPUMS" affiliation="University of Minnesota" role="Documentation">IPUMS</producer>
+        <prodDate date="2023-12-01">December 1, 2023</prodDate>
+        <prodPlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact URI="https://ipums.org" affiliation="University of Minnesota">IPUMS</contact>
+      </distStmt>
+      <serStmt>
+        <serName abbr="dhs">IPUMS DHS</serName>
+        <serInfo>DOI:10.18128/D080.V9</serInfo>
+      </serStmt>
+      <verStmt>
+        <version date="2023-12-01"/>
+      </verStmt>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <topcClas vocab="IPUMS">Identifiers Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Weights and subsample selection Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Geography, general Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Integrated geography Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Single sample geography Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Core demographic Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Possessions Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Wealth index Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Insurance, general Variables -- PERSON</topcClas>
+      </subject>
+      <sumDscr ID="sdatref-954">
+        <timePrd date="2017" event="single">2017</timePrd>
+        <nation abbr="sn">Senegal</nation>
+      </sumDscr>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  Senegal 2017 Members
+]]></notes>
+    </stdyInfo>
+    <dataAccs>
+      <useStmt>
+        <confDec required="no"><![CDATA[None]]></confDec>
+        <contact URI="http://www.idhsdata.org" affiliation="IPUMS">IPUMS DHS</contact>
+        <citReq><![CDATA[Publications and research reports based on the IPUMS DHS database must cite it appropriately. The citation should include the following:
+
+Elizabeth Heger Boyle, Miriam King and Matthew Sobek. IPUMS-Demographic and Health Surveys: Version 9 [dataset]. IPUMS and ICF, 2022. https://doi.org/10.18128/D080.V9
+
+The licensing agreement for use of IPUMS DHS data requires that users supply us with the title and full citation for any publications, research reports, or educational materials making use of the data or documentation. Please add your citation to the IPUMS bibliography at http://bibliography.ipums.org/.]]></citReq>
+        <conditions><![CDATA[Users of IPUMS DHS data must agree to abide by the access restrictions and terms of use set forth by the DHS Program: https://dhsprogram.com/data/Access-Instructions.cfm]]></conditions>
+        <disclaimer>The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.</disclaimer>
+      </useStmt>
+    </dataAccs>
+    <notes><![CDATA[User-provided description:  senegalfinal]]></notes>
+  </stdyDscr>
+  <fileDscr ID="ExtractData">
+    <fileTxt>
+      <fileName>idhs_00010.dat</fileName>
+      <fileCont>Microdata records</fileCont>
+      <fileStrc type="rectangular"/>
+      <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
+      <format>fixed length fields</format>
+      <filePlac>IPUMS, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</filePlac>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr><var ID="SAMPLE" dcml="0" files="ExtractData" intrvl="discrete" name="SAMPLE">
+  <location EndPos="5" StartPos="1" width="5"/>
+  <labl>IPUMS-DHS sample identifier</labl>
+  <txt><![CDATA[SAMPLE identifies the DHS sample from which the case is drawn.  Each sample receives a unique 5-digit code.  The first three digits are ISO/UN codes used in COUNTRY, and the last two digits identify the sample within the country, ordered by survey year.
+
+The related variable SAMPLESTR is a string variable that identifies the DHS sample with the same 5-digit code.]]></txt>
+  <catgry>
+    <catValu>00101</catValu>
+    <labl>Model 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>00401</catValu>
+    <labl>Afghanistan 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>02401</catValu>
+    <labl>Angola 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>05001</catValu>
+    <labl>Bangladesh 1994</labl>
+  </catgry>
+  <catgry>
+    <catValu>05002</catValu>
+    <labl>Bangladesh 1996-97</labl>
+  </catgry>
+  <catgry>
+    <catValu>05003</catValu>
+    <labl>Bangladesh 1999-00</labl>
+  </catgry>
+  <catgry>
+    <catValu>05004</catValu>
+    <labl>Bangladesh 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>05005</catValu>
+    <labl>Bangladesh 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>05006</catValu>
+    <labl>Bangladesh 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>05007</catValu>
+    <labl>Bangladesh 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>05008</catValu>
+    <labl>Bangladesh 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>10401</catValu>
+    <labl>Myanmar 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>10801</catValu>
+    <labl>Burundi 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>10802</catValu>
+    <labl>Burundi 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>10803</catValu>
+    <labl>Burundi 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>11601</catValu>
+    <labl>Cambodia 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>11602</catValu>
+    <labl>Cambodia 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>11603</catValu>
+    <labl>Cambodia 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>11604</catValu>
+    <labl>Cambodia 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>12001</catValu>
+    <labl>Cameroon 1991</labl>
+  </catgry>
+  <catgry>
+    <catValu>12002</catValu>
+    <labl>Cameroon 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>12003</catValu>
+    <labl>Cameroon 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>12004</catValu>
+    <labl>Cameroon 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>12005</catValu>
+    <labl>Cameroon 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>14001</catValu>
+    <labl>Central African Republic 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>14401</catValu>
+    <labl>Sri Lanka 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>14801</catValu>
+    <labl>Chad 1996-97</labl>
+  </catgry>
+  <catgry>
+    <catValu>14802</catValu>
+    <labl>Chad 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>14803</catValu>
+    <labl>Chad 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>17801</catValu>
+    <labl>Congo Brazzaville 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>17802</catValu>
+    <labl>Congo Brazzaville 2011-12</labl>
+  </catgry>
+  <catgry>
+    <catValu>18001</catValu>
+    <labl>Congo Democratic Republic 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>18002</catValu>
+    <labl>Congo Democratic Republic 2013-14</labl>
+  </catgry>
+  <catgry>
+    <catValu>20401</catValu>
+    <labl>Benin 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>20402</catValu>
+    <labl>Benin 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>20403</catValu>
+    <labl>Benin 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>20404</catValu>
+    <labl>Benin 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>20405</catValu>
+    <labl>Benin 2017-18</labl>
+  </catgry>
+  <catgry>
+    <catValu>23101</catValu>
+    <labl>Ethiopia 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>23102</catValu>
+    <labl>Ethiopia 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>23103</catValu>
+    <labl>Ethiopia 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>23104</catValu>
+    <labl>Ethiopia 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>23105</catValu>
+    <labl>Ethiopia 2019</labl>
+  </catgry>
+  <catgry>
+    <catValu>28801</catValu>
+    <labl>Ghana 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>28802</catValu>
+    <labl>Ghana 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>28803</catValu>
+    <labl>Ghana 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>28804</catValu>
+    <labl>Ghana 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>28805</catValu>
+    <labl>Ghana 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>28806</catValu>
+    <labl>Ghana 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>28807</catValu>
+    <labl>Ghana 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>32001</catValu>
+    <labl>Guatemala 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>32002</catValu>
+    <labl>Guatemala 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>32003</catValu>
+    <labl>Guatemala 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>32401</catValu>
+    <labl>Guinea 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>32402</catValu>
+    <labl>Guinea 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>32403</catValu>
+    <labl>Guinea 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>32404</catValu>
+    <labl>Guinea 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>35601</catValu>
+    <labl>India 1992-93</labl>
+  </catgry>
+  <catgry>
+    <catValu>35602</catValu>
+    <labl>India 1998-99</labl>
+  </catgry>
+  <catgry>
+    <catValu>35603</catValu>
+    <labl>India 2005-06</labl>
+  </catgry>
+  <catgry>
+    <catValu>35604</catValu>
+    <labl>India 2015-16</labl>
+  </catgry>
+  <catgry>
+    <catValu>35605</catValu>
+    <labl>India 2019-21</labl>
+  </catgry>
+  <catgry>
+    <catValu>38401</catValu>
+    <labl>Cote d'Ivoire 1994</labl>
+  </catgry>
+  <catgry>
+    <catValu>38402</catValu>
+    <labl>Cote d'Ivoire 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>38403</catValu>
+    <labl>Cote d'Ivoire 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>40001</catValu>
+    <labl>Jordan 1990</labl>
+  </catgry>
+  <catgry>
+    <catValu>40002</catValu>
+    <labl>Jordan 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>40003</catValu>
+    <labl>Jordan 2002</labl>
+  </catgry>
+  <catgry>
+    <catValu>40004</catValu>
+    <labl>Jordan 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>40005</catValu>
+    <labl>Jordan 2009</labl>
+  </catgry>
+  <catgry>
+    <catValu>40006</catValu>
+    <labl>Jordan 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>40007</catValu>
+    <labl>Jordan 2017-18</labl>
+  </catgry>
+  <catgry>
+    <catValu>40401</catValu>
+    <labl>Kenya 1989</labl>
+  </catgry>
+  <catgry>
+    <catValu>40402</catValu>
+    <labl>Kenya 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>40403</catValu>
+    <labl>Kenya 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>40404</catValu>
+    <labl>Kenya 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>40405</catValu>
+    <labl>Kenya 2008-9</labl>
+  </catgry>
+  <catgry>
+    <catValu>40406</catValu>
+    <labl>Kenya 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>42601</catValu>
+    <labl>Lesotho 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>42602</catValu>
+    <labl>Lesotho 2009</labl>
+  </catgry>
+  <catgry>
+    <catValu>42603</catValu>
+    <labl>Lesotho 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>43001</catValu>
+    <labl>Liberia 1986</labl>
+  </catgry>
+  <catgry>
+    <catValu>43002</catValu>
+    <labl>Liberia 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>43003</catValu>
+    <labl>Liberia 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>43004</catValu>
+    <labl>Liberia 2019</labl>
+  </catgry>
+  <catgry>
+    <catValu>45001</catValu>
+    <labl>Madagascar 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>45002</catValu>
+    <labl>Madagascar 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>45003</catValu>
+    <labl>Madagascar 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>45004</catValu>
+    <labl>Madagascar 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>45401</catValu>
+    <labl>Malawi 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>45402</catValu>
+    <labl>Malawi 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>45403</catValu>
+    <labl>Malawi 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>45404</catValu>
+    <labl>Malawi 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>45405</catValu>
+    <labl>Malawi 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>46601</catValu>
+    <labl>Mali 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>46602</catValu>
+    <labl>Mali 1995-6</labl>
+  </catgry>
+  <catgry>
+    <catValu>46603</catValu>
+    <labl>Mali 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>46604</catValu>
+    <labl>Mali 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>46605</catValu>
+    <labl>Mali 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>46606</catValu>
+    <labl>Mali 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>50401</catValu>
+    <labl>Morocco 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>50402</catValu>
+    <labl>Morocco 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>50403</catValu>
+    <labl>Morocco 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>50801</catValu>
+    <labl>Mozambique 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>50802</catValu>
+    <labl>Mozambique 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>50803</catValu>
+    <labl>Mozambique 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>51601</catValu>
+    <labl>Namibia 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>51602</catValu>
+    <labl>Namibia 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>51603</catValu>
+    <labl>Namibia 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>51604</catValu>
+    <labl>Namibia 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>52401</catValu>
+    <labl>Nepal 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>52402</catValu>
+    <labl>Nepal 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>52403</catValu>
+    <labl>Nepal 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>52404</catValu>
+    <labl>Nepal 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>52405</catValu>
+    <labl>Nepal 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>56201</catValu>
+    <labl>Niger 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>56202</catValu>
+    <labl>Niger 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>56203</catValu>
+    <labl>Niger 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>56204</catValu>
+    <labl>Niger 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>56601</catValu>
+    <labl>Nigeria 1990</labl>
+  </catgry>
+  <catgry>
+    <catValu>56602</catValu>
+    <labl>Nigeria 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>56603</catValu>
+    <labl>Nigeria 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>56604</catValu>
+    <labl>Nigeria 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>56605</catValu>
+    <labl>Nigeria 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>56606</catValu>
+    <labl>Nigeria 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>58601</catValu>
+    <labl>Pakistan 1990-91</labl>
+  </catgry>
+  <catgry>
+    <catValu>58602</catValu>
+    <labl>Pakistan 2006-07</labl>
+  </catgry>
+  <catgry>
+    <catValu>58603</catValu>
+    <labl>Pakistan 2012-13</labl>
+  </catgry>
+  <catgry>
+    <catValu>58604</catValu>
+    <labl>Pakistan 2017-18</labl>
+  </catgry>
+  <catgry>
+    <catValu>60401</catValu>
+    <labl>Peru 1991-92</labl>
+  </catgry>
+  <catgry>
+    <catValu>60402</catValu>
+    <labl>Peru 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>60403</catValu>
+    <labl>Peru 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>60404</catValu>
+    <labl>Peru 2004-08</labl>
+  </catgry>
+  <catgry>
+    <catValu>60405</catValu>
+    <labl>Peru 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>60406</catValu>
+    <labl>Peru 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>60407</catValu>
+    <labl>Peru 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>64601</catValu>
+    <labl>Rwanda 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>64602</catValu>
+    <labl>Rwanda 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>64603</catValu>
+    <labl>Rwanda 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>64604</catValu>
+    <labl>Rwanda 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>64605</catValu>
+    <labl>Rwanda 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>64606</catValu>
+    <labl>Rwanda 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>64607</catValu>
+    <labl>Rwanda 2019</labl>
+  </catgry>
+  <catgry>
+    <catValu>68601</catValu>
+    <labl>Senegal 1986</labl>
+  </catgry>
+  <catgry>
+    <catValu>68602</catValu>
+    <labl>Senegal 1992-93</labl>
+  </catgry>
+  <catgry>
+    <catValu>68603</catValu>
+    <labl>Senegal 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>68604</catValu>
+    <labl>Senegal 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>68605</catValu>
+    <labl>Senegal 2010-11</labl>
+  </catgry>
+  <catgry>
+    <catValu>68606</catValu>
+    <labl>Senegal 2012-13</labl>
+  </catgry>
+  <catgry>
+    <catValu>68607</catValu>
+    <labl>Senegal 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>68608</catValu>
+    <labl>Senegal 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>68609</catValu>
+    <labl>Senegal 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>68610</catValu>
+    <labl>Senegal 2017</labl>
+  </catgry>
+  <catgry>
+    <catValu>71001</catValu>
+    <labl>South Africa 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>71002</catValu>
+    <labl>South Africa 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>71601</catValu>
+    <labl>Zimbabwe 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>71602</catValu>
+    <labl>Zimbabwe 1994</labl>
+  </catgry>
+  <catgry>
+    <catValu>71603</catValu>
+    <labl>Zimbabwe 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>71604</catValu>
+    <labl>Zimbabwe 2005-6</labl>
+  </catgry>
+  <catgry>
+    <catValu>71605</catValu>
+    <labl>Zimbabwe 2010-11</labl>
+  </catgry>
+  <catgry>
+    <catValu>71606</catValu>
+    <labl>Zimbabwe 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>72901</catValu>
+    <labl>Sudan 1989-90</labl>
+  </catgry>
+  <catgry>
+    <catValu>74801</catValu>
+    <labl>Eswatini 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>76801</catValu>
+    <labl>Togo 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>76802</catValu>
+    <labl>Togo 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>76803</catValu>
+    <labl>Togo 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>78801</catValu>
+    <labl>Tunisia 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>79201</catValu>
+    <labl>Turkey 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>79202</catValu>
+    <labl>Turkey 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>79203</catValu>
+    <labl>Turkey 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>80001</catValu>
+    <labl>Uganda 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>80002</catValu>
+    <labl>Uganda 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>80003</catValu>
+    <labl>Uganda 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>80004</catValu>
+    <labl>Uganda 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>80005</catValu>
+    <labl>Uganda 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>80006</catValu>
+    <labl>Uganda 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>81801</catValu>
+    <labl>Egypt 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>81802</catValu>
+    <labl>Egypt 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>81803</catValu>
+    <labl>Egypt 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>81804</catValu>
+    <labl>Egypt 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>81805</catValu>
+    <labl>Egypt 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>81806</catValu>
+    <labl>Egypt 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>81807</catValu>
+    <labl>Egypt 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>81808</catValu>
+    <labl>Egypt 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>83401</catValu>
+    <labl>Tanzania 1991</labl>
+  </catgry>
+  <catgry>
+    <catValu>83402</catValu>
+    <labl>Tanzania 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>83403</catValu>
+    <labl>Tanzania 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>83404</catValu>
+    <labl>Tanzania 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>83405</catValu>
+    <labl>Tanzania 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>83406</catValu>
+    <labl>Tanzania 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>85401</catValu>
+    <labl>Burkina Faso 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>85402</catValu>
+    <labl>Burkina Faso 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>85403</catValu>
+    <labl>Burkina Faso 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>85404</catValu>
+    <labl>Burkina Faso 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>88701</catValu>
+    <labl>Yemen 1991-92</labl>
+  </catgry>
+  <catgry>
+    <catValu>88702</catValu>
+    <labl>Yemen 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>89401</catValu>
+    <labl>Zambia 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>89402</catValu>
+    <labl>Zambia 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>89403</catValu>
+    <labl>Zambia 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>89404</catValu>
+    <labl>Zambia 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>89405</catValu>
+    <labl>Zambia 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>89406</catValu>
+    <labl>Zambia 2018</labl>
+  </catgry>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="SAMPLESTR" dcml="0" files="ExtractData" intrvl="discrete" name="SAMPLESTR">
+  <location EndPos="10" StartPos="6" width="5"/>
+  <labl>IPUMS-DHS sample identifier (string)</labl>
+  <txt><![CDATA[SAMPLESTR is a string variable that identifies the DHS sample from which the case is drawn.  Each sample receives a unique 5-digit code.  The first three digits are ISO/UN codes used in COUNTRY, and the last two digits identify the sample within the country, ordered by survey year.
+
+The related variable SAMPLE is a numeric variable that identifies the DHS sample with the same 5-digit code.]]></txt>
+  <catgry>
+    <catValu>00101</catValu>
+    <labl>Model 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>00401</catValu>
+    <labl>Afghanistan 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>02401</catValu>
+    <labl>Angola 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>05001</catValu>
+    <labl>Bangladesh 1994</labl>
+  </catgry>
+  <catgry>
+    <catValu>05002</catValu>
+    <labl>Bangladesh 1996-97</labl>
+  </catgry>
+  <catgry>
+    <catValu>05003</catValu>
+    <labl>Bangladesh 1999-00</labl>
+  </catgry>
+  <catgry>
+    <catValu>05004</catValu>
+    <labl>Bangladesh 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>05005</catValu>
+    <labl>Bangladesh 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>05006</catValu>
+    <labl>Bangladesh 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>05007</catValu>
+    <labl>Bangladesh 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>05008</catValu>
+    <labl>Bangladesh 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>10401</catValu>
+    <labl>Myanmar 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>10801</catValu>
+    <labl>Burundi 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>10802</catValu>
+    <labl>Burundi 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>10803</catValu>
+    <labl>Burundi 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>11601</catValu>
+    <labl>Cambodia 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>11602</catValu>
+    <labl>Cambodia 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>11603</catValu>
+    <labl>Cambodia 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>11604</catValu>
+    <labl>Cambodia 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>12001</catValu>
+    <labl>Cameroon 1991</labl>
+  </catgry>
+  <catgry>
+    <catValu>12002</catValu>
+    <labl>Cameroon 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>12003</catValu>
+    <labl>Cameroon 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>12004</catValu>
+    <labl>Cameroon 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>12005</catValu>
+    <labl>Cameroon 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>14001</catValu>
+    <labl>Central African Republic 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>14801</catValu>
+    <labl>Chad 1996-97</labl>
+  </catgry>
+  <catgry>
+    <catValu>14802</catValu>
+    <labl>Chad 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>14803</catValu>
+    <labl>Chad 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>17801</catValu>
+    <labl>Congo Brazzaville 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>17802</catValu>
+    <labl>Congo Brazzaville 2011-12</labl>
+  </catgry>
+  <catgry>
+    <catValu>18001</catValu>
+    <labl>Congo Democratic Republic 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>18002</catValu>
+    <labl>Congo Democratic Republic 2013-14</labl>
+  </catgry>
+  <catgry>
+    <catValu>20401</catValu>
+    <labl>Benin 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>20402</catValu>
+    <labl>Benin 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>20403</catValu>
+    <labl>Benin 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>20404</catValu>
+    <labl>Benin 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>20405</catValu>
+    <labl>Benin 2017</labl>
+  </catgry>
+  <catgry>
+    <catValu>23101</catValu>
+    <labl>Ethiopia 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>23102</catValu>
+    <labl>Ethiopia 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>23103</catValu>
+    <labl>Ethiopia 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>23104</catValu>
+    <labl>Ethiopia 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>23105</catValu>
+    <labl>Ethiopia 2019</labl>
+  </catgry>
+  <catgry>
+    <catValu>28801</catValu>
+    <labl>Ghana 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>28802</catValu>
+    <labl>Ghana 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>28803</catValu>
+    <labl>Ghana 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>28804</catValu>
+    <labl>Ghana 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>28805</catValu>
+    <labl>Ghana 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>28806</catValu>
+    <labl>Ghana 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>28807</catValu>
+    <labl>Ghana 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>32001</catValu>
+    <labl>Guatemala 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>32002</catValu>
+    <labl>Guatemala 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>32003</catValu>
+    <labl>Guatemala 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>32401</catValu>
+    <labl>Guinea 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>32402</catValu>
+    <labl>Guinea 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>32403</catValu>
+    <labl>Guinea 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>32404</catValu>
+    <labl>Guinea 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>35601</catValu>
+    <labl>India 1992-93</labl>
+  </catgry>
+  <catgry>
+    <catValu>35602</catValu>
+    <labl>India 1998-99</labl>
+  </catgry>
+  <catgry>
+    <catValu>35603</catValu>
+    <labl>India 2005-06</labl>
+  </catgry>
+  <catgry>
+    <catValu>35604</catValu>
+    <labl>India 2015-16</labl>
+  </catgry>
+  <catgry>
+    <catValu>35605</catValu>
+    <labl>India 2019-21</labl>
+  </catgry>
+  <catgry>
+    <catValu>38401</catValu>
+    <labl>Cote d'Ivoire 1994</labl>
+  </catgry>
+  <catgry>
+    <catValu>38402</catValu>
+    <labl>Cote d'Ivoire 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>38403</catValu>
+    <labl>Cote d'Ivoire 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>40001</catValu>
+    <labl>Jordan 1990</labl>
+  </catgry>
+  <catgry>
+    <catValu>40002</catValu>
+    <labl>Jordan 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>40003</catValu>
+    <labl>Jordan 2002</labl>
+  </catgry>
+  <catgry>
+    <catValu>40004</catValu>
+    <labl>Jordan 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>40005</catValu>
+    <labl>Jordan 2009</labl>
+  </catgry>
+  <catgry>
+    <catValu>40006</catValu>
+    <labl>Jordan 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>40007</catValu>
+    <labl>Jordan 2017</labl>
+  </catgry>
+  <catgry>
+    <catValu>40401</catValu>
+    <labl>Kenya 1989</labl>
+  </catgry>
+  <catgry>
+    <catValu>40402</catValu>
+    <labl>Kenya 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>40403</catValu>
+    <labl>Kenya 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>40404</catValu>
+    <labl>Kenya 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>40405</catValu>
+    <labl>Kenya 2008-9</labl>
+  </catgry>
+  <catgry>
+    <catValu>40406</catValu>
+    <labl>Kenya 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>42601</catValu>
+    <labl>Lesotho 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>42602</catValu>
+    <labl>Lesotho 2009</labl>
+  </catgry>
+  <catgry>
+    <catValu>42603</catValu>
+    <labl>Lesotho 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>43001</catValu>
+    <labl>Liberia 1986</labl>
+  </catgry>
+  <catgry>
+    <catValu>43002</catValu>
+    <labl>Liberia 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>43003</catValu>
+    <labl>Liberia 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>43004</catValu>
+    <labl>Liberia 2019</labl>
+  </catgry>
+  <catgry>
+    <catValu>45001</catValu>
+    <labl>Madagascar 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>45002</catValu>
+    <labl>Madagascar 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>45003</catValu>
+    <labl>Madagascar 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>45004</catValu>
+    <labl>Madagascar 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>45401</catValu>
+    <labl>Malawi 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>45402</catValu>
+    <labl>Malawi 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>45403</catValu>
+    <labl>Malawi 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>45404</catValu>
+    <labl>Malawi 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>45405</catValu>
+    <labl>Malawi 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>46601</catValu>
+    <labl>Mali 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>46602</catValu>
+    <labl>Mali 1995-6</labl>
+  </catgry>
+  <catgry>
+    <catValu>46603</catValu>
+    <labl>Mali 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>46604</catValu>
+    <labl>Mali 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>46605</catValu>
+    <labl>Mali 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>46606</catValu>
+    <labl>Mali 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>50401</catValu>
+    <labl>Morocco 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>50402</catValu>
+    <labl>Morocco 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>50403</catValu>
+    <labl>Morocco 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>50801</catValu>
+    <labl>Mozambique 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>50802</catValu>
+    <labl>Mozambique 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>50803</catValu>
+    <labl>Mozambique 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>51601</catValu>
+    <labl>Namibia 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>51602</catValu>
+    <labl>Namibia 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>51603</catValu>
+    <labl>Namibia 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>51604</catValu>
+    <labl>Namibia 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>52401</catValu>
+    <labl>Nepal 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>52402</catValu>
+    <labl>Nepal 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>52403</catValu>
+    <labl>Nepal 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>52404</catValu>
+    <labl>Nepal 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>52405</catValu>
+    <labl>Nepal 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>56201</catValu>
+    <labl>Niger 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>56202</catValu>
+    <labl>Niger 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>56203</catValu>
+    <labl>Niger 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>56204</catValu>
+    <labl>Niger 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>56601</catValu>
+    <labl>Nigeria 1990</labl>
+  </catgry>
+  <catgry>
+    <catValu>56602</catValu>
+    <labl>Nigeria 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>56603</catValu>
+    <labl>Nigeria 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>56604</catValu>
+    <labl>Nigeria 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>56605</catValu>
+    <labl>Nigeria 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>56606</catValu>
+    <labl>Nigeria 2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>58601</catValu>
+    <labl>Pakistan 1990-91</labl>
+  </catgry>
+  <catgry>
+    <catValu>58602</catValu>
+    <labl>Pakistan 2006-07</labl>
+  </catgry>
+  <catgry>
+    <catValu>58603</catValu>
+    <labl>Pakistan 2012-13</labl>
+  </catgry>
+  <catgry>
+    <catValu>58604</catValu>
+    <labl>Pakistan 2017-18</labl>
+  </catgry>
+  <catgry>
+    <catValu>60401</catValu>
+    <labl>Peru 1991-92</labl>
+  </catgry>
+  <catgry>
+    <catValu>60402</catValu>
+    <labl>Peru 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>60403</catValu>
+    <labl>Peru 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>60404</catValu>
+    <labl>Peru 2004-08</labl>
+  </catgry>
+  <catgry>
+    <catValu>60405</catValu>
+    <labl>Peru 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>60406</catValu>
+    <labl>Peru 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>60407</catValu>
+    <labl>Peru 2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>64601</catValu>
+    <labl>Rwanda 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>64602</catValu>
+    <labl>Rwanda 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>64603</catValu>
+    <labl>Rwanda 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>64604</catValu>
+    <labl>Rwanda 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>64605</catValu>
+    <labl>Rwanda 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>64606</catValu>
+    <labl>Rwanda 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>64607</catValu>
+    <labl>Rwanda 2019</labl>
+  </catgry>
+  <catgry>
+    <catValu>68601</catValu>
+    <labl>Senegal 1986</labl>
+  </catgry>
+  <catgry>
+    <catValu>68602</catValu>
+    <labl>Senegal 1992-93</labl>
+  </catgry>
+  <catgry>
+    <catValu>68603</catValu>
+    <labl>Senegal 1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>68604</catValu>
+    <labl>Senegal 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>68605</catValu>
+    <labl>Senegal 2010-11</labl>
+  </catgry>
+  <catgry>
+    <catValu>68606</catValu>
+    <labl>Senegal 2012-13</labl>
+  </catgry>
+  <catgry>
+    <catValu>68607</catValu>
+    <labl>Senegal 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>68608</catValu>
+    <labl>Senegal 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>68609</catValu>
+    <labl>Senegal 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>68610</catValu>
+    <labl>Senegal 2017</labl>
+  </catgry>
+  <catgry>
+    <catValu>71001</catValu>
+    <labl>South Africa 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>71002</catValu>
+    <labl>South Africa 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>14401</catValu>
+    <labl>Sri Lanka 1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>71601</catValu>
+    <labl>Zimbabwe 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>71602</catValu>
+    <labl>Zimbabwe 1994</labl>
+  </catgry>
+  <catgry>
+    <catValu>71603</catValu>
+    <labl>Zimbabwe 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>71604</catValu>
+    <labl>Zimbabwe 2005-6</labl>
+  </catgry>
+  <catgry>
+    <catValu>71605</catValu>
+    <labl>Zimbabwe 2010-11</labl>
+  </catgry>
+  <catgry>
+    <catValu>71606</catValu>
+    <labl>Zimbabwe 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>72901</catValu>
+    <labl>Sudan 1989-90</labl>
+  </catgry>
+  <catgry>
+    <catValu>74801</catValu>
+    <labl>Eswatini 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>76801</catValu>
+    <labl>Togo 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>76802</catValu>
+    <labl>Togo 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>76803</catValu>
+    <labl>Togo 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>78801</catValu>
+    <labl>Tunisia 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>79201</catValu>
+    <labl>Turkey 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>79202</catValu>
+    <labl>Turkey 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>79203</catValu>
+    <labl>Turkey 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>80001</catValu>
+    <labl>Uganda 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>80002</catValu>
+    <labl>Uganda 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>80003</catValu>
+    <labl>Uganda 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>80004</catValu>
+    <labl>Uganda 2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>80005</catValu>
+    <labl>Uganda 2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>80006</catValu>
+    <labl>Uganda 2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>81801</catValu>
+    <labl>Egypt 1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>81802</catValu>
+    <labl>Egypt 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>81803</catValu>
+    <labl>Egypt 1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>81804</catValu>
+    <labl>Egypt 2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>81805</catValu>
+    <labl>Egypt 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>81806</catValu>
+    <labl>Egypt 2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>81807</catValu>
+    <labl>Egypt 2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>81808</catValu>
+    <labl>Egypt 2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>83401</catValu>
+    <labl>Tanzania 1991</labl>
+  </catgry>
+  <catgry>
+    <catValu>83402</catValu>
+    <labl>Tanzania 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>83403</catValu>
+    <labl>Tanzania 1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>83404</catValu>
+    <labl>Tanzania 2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>83405</catValu>
+    <labl>Tanzania 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>83406</catValu>
+    <labl>Tanzania 2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>85401</catValu>
+    <labl>Burkina Faso 1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>85402</catValu>
+    <labl>Burkina Faso 1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>85403</catValu>
+    <labl>Burkina Faso 2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>85404</catValu>
+    <labl>Burkina Faso 2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>88701</catValu>
+    <labl>Yemen 1991-92</labl>
+  </catgry>
+  <catgry>
+    <catValu>88702</catValu>
+    <labl>Yemen 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>89401</catValu>
+    <labl>Zambia 1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>89402</catValu>
+    <labl>Zambia 1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>89403</catValu>
+    <labl>Zambia 2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>89404</catValu>
+    <labl>Zambia 2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>89405</catValu>
+    <labl>Zambia 2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>89406</catValu>
+    <labl>Zambia 2018</labl>
+  </catgry>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="character"/>
+</var>
+<var ID="COUNTRY" dcml="0" files="ExtractData" intrvl="discrete" name="COUNTRY">
+  <location EndPos="13" StartPos="11" width="3"/>
+  <labl>Country</labl>
+  <txt><![CDATA[COUNTRY reports the country where the survey was fielded. The codes assigned to each country are those used by the UN Statistics Division and the ISO (International Organization for Standardization).]]></txt>
+  <catgry>
+    <catValu>004</catValu>
+    <labl>Afghanistan</labl>
+  </catgry>
+  <catgry>
+    <catValu>024</catValu>
+    <labl>Angola</labl>
+  </catgry>
+  <catgry>
+    <catValu>050</catValu>
+    <labl>Bangladesh</labl>
+  </catgry>
+  <catgry>
+    <catValu>104</catValu>
+    <labl>Myanmar</labl>
+  </catgry>
+  <catgry>
+    <catValu>108</catValu>
+    <labl>Burundi</labl>
+  </catgry>
+  <catgry>
+    <catValu>116</catValu>
+    <labl>Cambodia</labl>
+  </catgry>
+  <catgry>
+    <catValu>120</catValu>
+    <labl>Cameroon</labl>
+  </catgry>
+  <catgry>
+    <catValu>140</catValu>
+    <labl>Central African Republic</labl>
+  </catgry>
+  <catgry>
+    <catValu>144</catValu>
+    <labl>Sri Lanka</labl>
+  </catgry>
+  <catgry>
+    <catValu>148</catValu>
+    <labl>Chad</labl>
+  </catgry>
+  <catgry>
+    <catValu>178</catValu>
+    <labl>Congo Brazzaville</labl>
+  </catgry>
+  <catgry>
+    <catValu>180</catValu>
+    <labl>Congo Democratic Republic</labl>
+  </catgry>
+  <catgry>
+    <catValu>204</catValu>
+    <labl>Benin</labl>
+  </catgry>
+  <catgry>
+    <catValu>231</catValu>
+    <labl>Ethiopia</labl>
+  </catgry>
+  <catgry>
+    <catValu>288</catValu>
+    <labl>Ghana</labl>
+  </catgry>
+  <catgry>
+    <catValu>320</catValu>
+    <labl>Guatemala</labl>
+  </catgry>
+  <catgry>
+    <catValu>324</catValu>
+    <labl>Guinea</labl>
+  </catgry>
+  <catgry>
+    <catValu>356</catValu>
+    <labl>India</labl>
+  </catgry>
+  <catgry>
+    <catValu>384</catValu>
+    <labl>Cote d'Ivoire</labl>
+  </catgry>
+  <catgry>
+    <catValu>400</catValu>
+    <labl>Jordan</labl>
+  </catgry>
+  <catgry>
+    <catValu>404</catValu>
+    <labl>Kenya</labl>
+  </catgry>
+  <catgry>
+    <catValu>426</catValu>
+    <labl>Lesotho</labl>
+  </catgry>
+  <catgry>
+    <catValu>430</catValu>
+    <labl>Liberia</labl>
+  </catgry>
+  <catgry>
+    <catValu>450</catValu>
+    <labl>Madagascar</labl>
+  </catgry>
+  <catgry>
+    <catValu>454</catValu>
+    <labl>Malawi</labl>
+  </catgry>
+  <catgry>
+    <catValu>466</catValu>
+    <labl>Mali</labl>
+  </catgry>
+  <catgry>
+    <catValu>504</catValu>
+    <labl>Morocco</labl>
+  </catgry>
+  <catgry>
+    <catValu>508</catValu>
+    <labl>Mozambique</labl>
+  </catgry>
+  <catgry>
+    <catValu>516</catValu>
+    <labl>Namibia</labl>
+  </catgry>
+  <catgry>
+    <catValu>524</catValu>
+    <labl>Nepal</labl>
+  </catgry>
+  <catgry>
+    <catValu>562</catValu>
+    <labl>Niger</labl>
+  </catgry>
+  <catgry>
+    <catValu>586</catValu>
+    <labl>Pakistan</labl>
+  </catgry>
+  <catgry>
+    <catValu>566</catValu>
+    <labl>Nigeria</labl>
+  </catgry>
+  <catgry>
+    <catValu>604</catValu>
+    <labl>Peru</labl>
+  </catgry>
+  <catgry>
+    <catValu>646</catValu>
+    <labl>Rwanda</labl>
+  </catgry>
+  <catgry>
+    <catValu>686</catValu>
+    <labl>Senegal</labl>
+  </catgry>
+  <catgry>
+    <catValu>710</catValu>
+    <labl>South Africa</labl>
+  </catgry>
+  <catgry>
+    <catValu>716</catValu>
+    <labl>Zimbabwe</labl>
+  </catgry>
+  <catgry>
+    <catValu>729</catValu>
+    <labl>Sudan</labl>
+  </catgry>
+  <catgry>
+    <catValu>748</catValu>
+    <labl>Eswatini</labl>
+  </catgry>
+  <catgry>
+    <catValu>768</catValu>
+    <labl>Togo</labl>
+  </catgry>
+  <catgry>
+    <catValu>788</catValu>
+    <labl>Tunisia</labl>
+  </catgry>
+  <catgry>
+    <catValu>792</catValu>
+    <labl>Turkey</labl>
+  </catgry>
+  <catgry>
+    <catValu>800</catValu>
+    <labl>Uganda</labl>
+  </catgry>
+  <catgry>
+    <catValu>818</catValu>
+    <labl>Egypt</labl>
+  </catgry>
+  <catgry>
+    <catValu>834</catValu>
+    <labl>Tanzania</labl>
+  </catgry>
+  <catgry>
+    <catValu>854</catValu>
+    <labl>Burkina Faso</labl>
+  </catgry>
+  <catgry>
+    <catValu>887</catValu>
+    <labl>Yemen</labl>
+  </catgry>
+  <catgry>
+    <catValu>894</catValu>
+    <labl>Zambia</labl>
+  </catgry>
+  <catgry>
+    <catValu>001</catValu>
+    <labl>Model</labl>
+  </catgry>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="YEAR" dcml="0" files="ExtractData" intrvl="discrete" name="YEAR">
+  <location EndPos="17" StartPos="14" width="4"/>
+  <labl>Year of sample</labl>
+  <txt><![CDATA[YEAR reports the year when the survey was fielded, as a four-digit variable. In some cases, the DHS was conducted over the course of two years (e.g., Ethiopia 2010-2011), but YEAR always gives a single year.  For full information about the timing of the surveys, please consult the IPUMS-DHS Sample Descriptions page.]]></txt>
+  <catgry>
+    <catValu>1986</catValu>
+    <labl>1986</labl>
+  </catgry>
+  <catgry>
+    <catValu>1987</catValu>
+    <labl>1987</labl>
+  </catgry>
+  <catgry>
+    <catValu>1988</catValu>
+    <labl>1988</labl>
+  </catgry>
+  <catgry>
+    <catValu>1989</catValu>
+    <labl>1989</labl>
+  </catgry>
+  <catgry>
+    <catValu>1990</catValu>
+    <labl>1990</labl>
+  </catgry>
+  <catgry>
+    <catValu>1991</catValu>
+    <labl>1991</labl>
+  </catgry>
+  <catgry>
+    <catValu>1992</catValu>
+    <labl>1992</labl>
+  </catgry>
+  <catgry>
+    <catValu>1993</catValu>
+    <labl>1993</labl>
+  </catgry>
+  <catgry>
+    <catValu>1994</catValu>
+    <labl>1994</labl>
+  </catgry>
+  <catgry>
+    <catValu>1995</catValu>
+    <labl>1995</labl>
+  </catgry>
+  <catgry>
+    <catValu>1996</catValu>
+    <labl>1996</labl>
+  </catgry>
+  <catgry>
+    <catValu>1997</catValu>
+    <labl>1997</labl>
+  </catgry>
+  <catgry>
+    <catValu>1998</catValu>
+    <labl>1998</labl>
+  </catgry>
+  <catgry>
+    <catValu>1999</catValu>
+    <labl>1999</labl>
+  </catgry>
+  <catgry>
+    <catValu>2000</catValu>
+    <labl>2000</labl>
+  </catgry>
+  <catgry>
+    <catValu>2001</catValu>
+    <labl>2001</labl>
+  </catgry>
+  <catgry>
+    <catValu>2002</catValu>
+    <labl>2002</labl>
+  </catgry>
+  <catgry>
+    <catValu>2003</catValu>
+    <labl>2003</labl>
+  </catgry>
+  <catgry>
+    <catValu>2004</catValu>
+    <labl>2004</labl>
+  </catgry>
+  <catgry>
+    <catValu>2005</catValu>
+    <labl>2005</labl>
+  </catgry>
+  <catgry>
+    <catValu>2006</catValu>
+    <labl>2006</labl>
+  </catgry>
+  <catgry>
+    <catValu>2007</catValu>
+    <labl>2007</labl>
+  </catgry>
+  <catgry>
+    <catValu>2008</catValu>
+    <labl>2008</labl>
+  </catgry>
+  <catgry>
+    <catValu>2009</catValu>
+    <labl>2009</labl>
+  </catgry>
+  <catgry>
+    <catValu>2010</catValu>
+    <labl>2010</labl>
+  </catgry>
+  <catgry>
+    <catValu>2011</catValu>
+    <labl>2011</labl>
+  </catgry>
+  <catgry>
+    <catValu>2012</catValu>
+    <labl>2012</labl>
+  </catgry>
+  <catgry>
+    <catValu>2013</catValu>
+    <labl>2013</labl>
+  </catgry>
+  <catgry>
+    <catValu>2014</catValu>
+    <labl>2014</labl>
+  </catgry>
+  <catgry>
+    <catValu>2015</catValu>
+    <labl>2015</labl>
+  </catgry>
+  <catgry>
+    <catValu>2016</catValu>
+    <labl>2016</labl>
+  </catgry>
+  <catgry>
+    <catValu>2017</catValu>
+    <labl>2017</labl>
+  </catgry>
+  <catgry>
+    <catValu>2018</catValu>
+    <labl>2018</labl>
+  </catgry>
+  <catgry>
+    <catValu>2019</catValu>
+    <labl>2019</labl>
+  </catgry>
+  <catgry>
+    <catValu>2020</catValu>
+    <labl>2020</labl>
+  </catgry>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="IDHSHID" dcml="0" files="ExtractData" intrvl="contin" name="IDHSHID">
+  <location EndPos="37" StartPos="18" width="20"/>
+  <labl>Unique cross-sample household identifier</labl>
+  <txt><![CDATA[IDHSHID is an identifying number unique to a specific household in a given sample.  It is a concatenation of SAMPLE, CLUSTERNO and HHNUM.]]></txt>
+  <codInstr><![CDATA[IDHSHID is a 19-character string variable.]]></codInstr>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="character"/>
+</var>
+<var ID="DHSID" dcml="0" files="ExtractData" intrvl="contin" name="DHSID">
+  <location EndPos="51" StartPos="38" width="14"/>
+  <labl>Key to link DHS clusters to context data (string)</labl>
+  <txt><![CDATA[DHSID is the 14-character DHS identification code for DHS clusters constructed from the 2-character country code, the 4-digit survey year, and the 8-digit cluster identification number. DHSID is available for every IPUMS-DHS sample and uniquely identifies clusters across samples. It serves as the unique linking key between IPUMS-DHS microdata and DHS cluster shapefiles.]]></txt>
+  <codInstr><![CDATA[DHSID is a 14-character string variable.]]></codInstr>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="character"/>
+</var>
+<var ID="IDHSPSU" dcml="0" files="ExtractData" intrvl="contin" name="IDHSPSU">
+  <location EndPos="62" StartPos="52" width="11"/>
+  <labl>Unique sample-case PSU identifier</labl>
+  <txt><![CDATA[IDHSPSU is an identifying number unique to the primary sampling unit in a given sample.  This variable is a concatenation of SAMPLE (which uniquely identifies each country- and year-specific sample) and PSU (the numbered primary sampling units within a given sample).]]></txt>
+  <codInstr><![CDATA[IDHSPSU is a 10-character numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="IDHSSTRATA" dcml="0" files="ExtractData" intrvl="contin" name="IDHSSTRATA">
+  <location EndPos="72" StartPos="63" width="10"/>
+  <labl>Unique cross-sample sampling strata</labl>
+  <txt><![CDATA[IDHSSTRATA is an identifying number unique to the sampling strata in a given sample.  This variable is a concatenation of SAMPLE (which uniquely identifies each country- and year-specific sample) and STRATA (groups of geographically similar areas, from which primary sampling units are drawn).
+
+The variable STRATA, and hence IDHSSTRATA, are unavailable for samples from DHS Phase 1 (prior to 1990).]]></txt>
+  <codInstr><![CDATA[IDHSSTRATA is a 9-character numeric variable.]]></codInstr>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHID" dcml="0" files="ExtractData" intrvl="contin" name="HHID">
+  <location EndPos="87" StartPos="73" width="15"/>
+  <labl>Sample-specific household identifier</labl>
+  <txt><![CDATA[HHID is an identifying number unique to each household in a given sample.]]></txt>
+  <codInstr><![CDATA[HHID is a 15-character string variable.]]></codInstr>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="character"/>
+</var>
+<var ID="HHLINENO" dcml="0" files="ExtractData" intrvl="discrete" name="HHLINENO">
+  <location EndPos="89" StartPos="88" width="2"/>
+  <labl>Line number in household</labl>
+  <txt><![CDATA[HHLINENO (HVIDX) reports the line number of the household member in the household schedule.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>36</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>37</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>38</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>39</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>40</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>41</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>42</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>43</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>44</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>45</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>46</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>47</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>48</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>49</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>50</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>51</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>52</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>53</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>54</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>55</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>56</labl>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+    <labl>57</labl>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+    <labl>58</labl>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+    <labl>59</labl>
+  </catgry>
+  <catgry>
+    <catValu>60</catValu>
+    <labl>60</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>61</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>62</labl>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+    <labl>63</labl>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+    <labl>64</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>65</labl>
+  </catgry>
+  <catgry>
+    <catValu>66</catValu>
+    <labl>66</labl>
+  </catgry>
+  <catgry>
+    <catValu>67</catValu>
+    <labl>67</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>68</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>69</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>70</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>71</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>72</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>73</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>74</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>75</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>76</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>77</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>78</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>79</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>80</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>81</labl>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+    <labl>82</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>83</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>84</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>85</labl>
+  </catgry>
+  <catgry>
+    <catValu>86</catValu>
+    <labl>86</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>87</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>88</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>89</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>90</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>91</labl>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+    <labl>92</labl>
+  </catgry>
+  <catgry>
+    <catValu>93</catValu>
+    <labl>93</labl>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+    <labl>94</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>95</labl>
+  </catgry>
+  <concept vocab="IPUMS">Identifiers Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHWEIGHT" dcml="0" files="ExtractData" intrvl="contin" name="HHWEIGHT">
+  <location EndPos="98" StartPos="90" width="9"/>
+  <labl>Household sample weight (6 decimals)</labl>
+  <txt><![CDATA[HHWEIGHT (HV005) is an 8-digit numeric variable, which should be used as a weighting factor to produce representative numbers accurately describing the surveyed population, when household members are the unit of analysis.]]></txt>
+  <codInstr><![CDATA[HHWEIGHT (HV005) is an 8-digit numeric variable with 6 implied decimal places.]]></codInstr>
+  <concept vocab="IPUMS">Weights and subsample selection Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="POPWT_HH" dcml="0" files="ExtractData" intrvl="contin" name="POPWT_HH">
+  <location EndPos="108" StartPos="99" width="10"/>
+  <labl>Population factor weight (household members)</labl>
+  <txt><![CDATA[POPWT_HH is a population adjustment factor created by IPUMS to generate count estimates of household members for samples that are nationally representative. See our documentation for more information about how weighting variables like POPWT_HH are created.]]></txt>
+  <codInstr><![CDATA[POPWT_HH is a numeric integer variable.]]></codInstr>
+  <concept vocab="IPUMS">Weights and subsample selection Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHMWEIGHT" dcml="6" files="ExtractData" intrvl="contin" name="HHMWEIGHT">
+  <location EndPos="116" StartPos="109" width="8"/>
+  <labl>Household weight for male subsample (6 decimals)</labl>
+  <txt><![CDATA[HHMWEIGHT (HV028) is an 8-digit numeric variable, which should be used as a weighting factor for the subset of households that were randomly selected for the men's or husband's survey. HHMWEIGHT should be used to weight all estimates produced using the households selected for the men's or husband's survey. For households not included in the men's or husband's survey, HHMWEIGHT is set to zero. 
+
+Note: For researchers using a flat data file (.dat), HHMWEIGHT contains 6 implied decimal places, and researchers should divide this variable by 1,000,000 before applying it as a weighting factor. For all other data formats, HHMWEIGHT has already been adjusted, and researchers do not need to make any changes before using this variable.]]></txt>
+  <codInstr><![CDATA[HHMWEIGHT (HV028) is an 8-digit numeric variable with 6 implied decimal places.]]></codInstr>
+  <concept vocab="IPUMS">Weights and subsample selection Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="URBANHH" dcml="0" files="ExtractData" intrvl="discrete" name="URBANHH">
+  <location EndPos="117" StartPos="117" width="1"/>
+  <labl>Urban-rural status</labl>
+  <txt><![CDATA[URBANHH (HV025) indicates whether the household member's de facto place of residence (i.e., where the person actually was at the time of the survey) was in an urban or rural location.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Urban</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Rural</labl>
+  </catgry>
+  <concept vocab="IPUMS">Geography, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GEO_SN1986_2017" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_SN1986_2017">
+  <location EndPos="118" StartPos="118" width="1"/>
+  <labl>Senegal regions, 1986-2017 [integrated; GIS]</labl>
+  <txt><![CDATA[GEO_SN1986_2017 indicates the region of Senegal where the respondent was interviewed. The variable is integrated to yield units with consistent boundaries across samples.
+
+Labels identify the modern geographic units (regions) contained in each integrated region. Each sample also has its own non-integrated geography variable. The 2005-2017 Senegal samples have greater geographic detail available in their sample-specific variables.
+
+An integrated GIS map (in shapefile format) for Senegal can be downloaded here.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Dakar, Thiès (West)</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Diourbel, Fatick, Kaolack, Louga, Kaffrine (Center)</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Saint-Louis, Tambacounda, Matam, Kedougou (North East)</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Kolda, Ziguinchor, Sedhiou (South)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Integrated geography Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="GEO_SN2017" dcml="0" files="ExtractData" intrvl="discrete" name="GEO_SN2017">
+  <location EndPos="120" StartPos="119" width="2"/>
+  <labl>Senegal regions, 2017 [GIS]</labl>
+  <txt><![CDATA[GEO_SN2017 indicates the region of Senegal where the respondent was interviewed. DHS regions in the 2017 Senegal survey are equivalent to regions. 
+
+A GIS map for GEO_SN2017 (in shapefile format) can be downloaded from the DHS Program Spatial Data Repository Boundaries page.]]></txt>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>Dakar</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>Ziguinchor</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>Diourbel</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>Saint-Louis</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>Tambacounda</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>Kaolack</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>Thiès</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>Louga</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>Fatick</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Kolda</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Matam</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Kaffrine</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Kedougou</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>Sedhiou</labl>
+  </catgry>
+  <concept vocab="IPUMS">Single sample geography Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHAGE" dcml="0" files="ExtractData" intrvl="discrete" name="HHAGE">
+  <location EndPos="122" StartPos="121" width="2"/>
+  <labl>Age of household member</labl>
+  <txt><![CDATA[HHAGE (HV105) reports the household member's age, as given by the respondent for the household questionnaire.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>0</labl>
+  </catgry>
+  <catgry>
+    <catValu>01</catValu>
+    <labl>1</labl>
+  </catgry>
+  <catgry>
+    <catValu>02</catValu>
+    <labl>2</labl>
+  </catgry>
+  <catgry>
+    <catValu>03</catValu>
+    <labl>3</labl>
+  </catgry>
+  <catgry>
+    <catValu>04</catValu>
+    <labl>4</labl>
+  </catgry>
+  <catgry>
+    <catValu>05</catValu>
+    <labl>5</labl>
+  </catgry>
+  <catgry>
+    <catValu>06</catValu>
+    <labl>6</labl>
+  </catgry>
+  <catgry>
+    <catValu>07</catValu>
+    <labl>7</labl>
+  </catgry>
+  <catgry>
+    <catValu>08</catValu>
+    <labl>8</labl>
+  </catgry>
+  <catgry>
+    <catValu>09</catValu>
+    <labl>9</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>10</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>11</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>12</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>13</labl>
+  </catgry>
+  <catgry>
+    <catValu>14</catValu>
+    <labl>14</labl>
+  </catgry>
+  <catgry>
+    <catValu>15</catValu>
+    <labl>15</labl>
+  </catgry>
+  <catgry>
+    <catValu>16</catValu>
+    <labl>16</labl>
+  </catgry>
+  <catgry>
+    <catValu>17</catValu>
+    <labl>17</labl>
+  </catgry>
+  <catgry>
+    <catValu>18</catValu>
+    <labl>18</labl>
+  </catgry>
+  <catgry>
+    <catValu>19</catValu>
+    <labl>19</labl>
+  </catgry>
+  <catgry>
+    <catValu>20</catValu>
+    <labl>20</labl>
+  </catgry>
+  <catgry>
+    <catValu>21</catValu>
+    <labl>21</labl>
+  </catgry>
+  <catgry>
+    <catValu>22</catValu>
+    <labl>22</labl>
+  </catgry>
+  <catgry>
+    <catValu>23</catValu>
+    <labl>23</labl>
+  </catgry>
+  <catgry>
+    <catValu>24</catValu>
+    <labl>24</labl>
+  </catgry>
+  <catgry>
+    <catValu>25</catValu>
+    <labl>25</labl>
+  </catgry>
+  <catgry>
+    <catValu>26</catValu>
+    <labl>26</labl>
+  </catgry>
+  <catgry>
+    <catValu>27</catValu>
+    <labl>27</labl>
+  </catgry>
+  <catgry>
+    <catValu>28</catValu>
+    <labl>28</labl>
+  </catgry>
+  <catgry>
+    <catValu>29</catValu>
+    <labl>29</labl>
+  </catgry>
+  <catgry>
+    <catValu>30</catValu>
+    <labl>30</labl>
+  </catgry>
+  <catgry>
+    <catValu>31</catValu>
+    <labl>31</labl>
+  </catgry>
+  <catgry>
+    <catValu>32</catValu>
+    <labl>32</labl>
+  </catgry>
+  <catgry>
+    <catValu>33</catValu>
+    <labl>33</labl>
+  </catgry>
+  <catgry>
+    <catValu>34</catValu>
+    <labl>34</labl>
+  </catgry>
+  <catgry>
+    <catValu>35</catValu>
+    <labl>35</labl>
+  </catgry>
+  <catgry>
+    <catValu>36</catValu>
+    <labl>36</labl>
+  </catgry>
+  <catgry>
+    <catValu>37</catValu>
+    <labl>37</labl>
+  </catgry>
+  <catgry>
+    <catValu>38</catValu>
+    <labl>38</labl>
+  </catgry>
+  <catgry>
+    <catValu>39</catValu>
+    <labl>39</labl>
+  </catgry>
+  <catgry>
+    <catValu>40</catValu>
+    <labl>40</labl>
+  </catgry>
+  <catgry>
+    <catValu>41</catValu>
+    <labl>41</labl>
+  </catgry>
+  <catgry>
+    <catValu>42</catValu>
+    <labl>42</labl>
+  </catgry>
+  <catgry>
+    <catValu>43</catValu>
+    <labl>43</labl>
+  </catgry>
+  <catgry>
+    <catValu>44</catValu>
+    <labl>44</labl>
+  </catgry>
+  <catgry>
+    <catValu>45</catValu>
+    <labl>45</labl>
+  </catgry>
+  <catgry>
+    <catValu>46</catValu>
+    <labl>46</labl>
+  </catgry>
+  <catgry>
+    <catValu>47</catValu>
+    <labl>47</labl>
+  </catgry>
+  <catgry>
+    <catValu>48</catValu>
+    <labl>48</labl>
+  </catgry>
+  <catgry>
+    <catValu>49</catValu>
+    <labl>49</labl>
+  </catgry>
+  <catgry>
+    <catValu>50</catValu>
+    <labl>50</labl>
+  </catgry>
+  <catgry>
+    <catValu>51</catValu>
+    <labl>51</labl>
+  </catgry>
+  <catgry>
+    <catValu>52</catValu>
+    <labl>52</labl>
+  </catgry>
+  <catgry>
+    <catValu>53</catValu>
+    <labl>53</labl>
+  </catgry>
+  <catgry>
+    <catValu>54</catValu>
+    <labl>54</labl>
+  </catgry>
+  <catgry>
+    <catValu>55</catValu>
+    <labl>55</labl>
+  </catgry>
+  <catgry>
+    <catValu>56</catValu>
+    <labl>56</labl>
+  </catgry>
+  <catgry>
+    <catValu>57</catValu>
+    <labl>57</labl>
+  </catgry>
+  <catgry>
+    <catValu>58</catValu>
+    <labl>58</labl>
+  </catgry>
+  <catgry>
+    <catValu>59</catValu>
+    <labl>59</labl>
+  </catgry>
+  <catgry>
+    <catValu>60</catValu>
+    <labl>60</labl>
+  </catgry>
+  <catgry>
+    <catValu>61</catValu>
+    <labl>61</labl>
+  </catgry>
+  <catgry>
+    <catValu>62</catValu>
+    <labl>62</labl>
+  </catgry>
+  <catgry>
+    <catValu>63</catValu>
+    <labl>63</labl>
+  </catgry>
+  <catgry>
+    <catValu>64</catValu>
+    <labl>64</labl>
+  </catgry>
+  <catgry>
+    <catValu>65</catValu>
+    <labl>65</labl>
+  </catgry>
+  <catgry>
+    <catValu>66</catValu>
+    <labl>66</labl>
+  </catgry>
+  <catgry>
+    <catValu>67</catValu>
+    <labl>67</labl>
+  </catgry>
+  <catgry>
+    <catValu>68</catValu>
+    <labl>68</labl>
+  </catgry>
+  <catgry>
+    <catValu>69</catValu>
+    <labl>69</labl>
+  </catgry>
+  <catgry>
+    <catValu>70</catValu>
+    <labl>70</labl>
+  </catgry>
+  <catgry>
+    <catValu>71</catValu>
+    <labl>71</labl>
+  </catgry>
+  <catgry>
+    <catValu>72</catValu>
+    <labl>72</labl>
+  </catgry>
+  <catgry>
+    <catValu>73</catValu>
+    <labl>73</labl>
+  </catgry>
+  <catgry>
+    <catValu>74</catValu>
+    <labl>74</labl>
+  </catgry>
+  <catgry>
+    <catValu>75</catValu>
+    <labl>75</labl>
+  </catgry>
+  <catgry>
+    <catValu>76</catValu>
+    <labl>76</labl>
+  </catgry>
+  <catgry>
+    <catValu>77</catValu>
+    <labl>77</labl>
+  </catgry>
+  <catgry>
+    <catValu>78</catValu>
+    <labl>78</labl>
+  </catgry>
+  <catgry>
+    <catValu>79</catValu>
+    <labl>79</labl>
+  </catgry>
+  <catgry>
+    <catValu>80</catValu>
+    <labl>80</labl>
+  </catgry>
+  <catgry>
+    <catValu>81</catValu>
+    <labl>81</labl>
+  </catgry>
+  <catgry>
+    <catValu>82</catValu>
+    <labl>82</labl>
+  </catgry>
+  <catgry>
+    <catValu>83</catValu>
+    <labl>83</labl>
+  </catgry>
+  <catgry>
+    <catValu>84</catValu>
+    <labl>84</labl>
+  </catgry>
+  <catgry>
+    <catValu>85</catValu>
+    <labl>85</labl>
+  </catgry>
+  <catgry>
+    <catValu>86</catValu>
+    <labl>86</labl>
+  </catgry>
+  <catgry>
+    <catValu>87</catValu>
+    <labl>87</labl>
+  </catgry>
+  <catgry>
+    <catValu>88</catValu>
+    <labl>88</labl>
+  </catgry>
+  <catgry>
+    <catValu>89</catValu>
+    <labl>89</labl>
+  </catgry>
+  <catgry>
+    <catValu>90</catValu>
+    <labl>90</labl>
+  </catgry>
+  <catgry>
+    <catValu>91</catValu>
+    <labl>91</labl>
+  </catgry>
+  <catgry>
+    <catValu>92</catValu>
+    <labl>92</labl>
+  </catgry>
+  <catgry>
+    <catValu>93</catValu>
+    <labl>93</labl>
+  </catgry>
+  <catgry>
+    <catValu>94</catValu>
+    <labl>94</labl>
+  </catgry>
+  <catgry>
+    <catValu>95</catValu>
+    <labl>95+</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Core demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHRESIDENT" dcml="0" files="ExtractData" intrvl="discrete" name="HHRESIDENT">
+  <location EndPos="123" StartPos="123" width="1"/>
+  <labl>Usual resident or visitor</labl>
+  <txt><![CDATA[HHRESIDENT (HV102) indicates whether the household member is a usual resident of the household or is just visiting. As defined by the HHRESIDENT variable, a visitor could potentially reside in the city, town, or village where the interview took place, but would have answered "No" to the question, "Does (NAME) usually live here [in this dwelling unit]?" on the household questionnaire.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Usual resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Visitor</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Core demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHBIRTHCERT" dcml="0" files="ExtractData" intrvl="discrete" name="HHBIRTHCERT">
+  <location EndPos="125" StartPos="124" width="2"/>
+  <labl>Has a birth certificate</labl>
+  <txt><![CDATA[HHBIRTHCERT (HV140) indicates whether the household member's birth is registered or whether the person has a birth certificate.]]></txt>
+  <catgry>
+    <catValu>00</catValu>
+    <labl>Neither certificate nor registered</labl>
+  </catgry>
+  <catgry>
+    <catValu>10</catValu>
+    <labl>Either has certificate or registered birth</labl>
+  </catgry>
+  <catgry>
+    <catValu>11</catValu>
+    <labl>Has certificate</labl>
+  </catgry>
+  <catgry>
+    <catValu>12</catValu>
+    <labl>Registered</labl>
+  </catgry>
+  <catgry>
+    <catValu>13</catValu>
+    <labl>Has hospital card only</labl>
+  </catgry>
+  <catgry>
+    <catValu>97</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>98</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>99</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Core demographic Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="HHPHONEHH" dcml="0" files="ExtractData" intrvl="discrete" name="HHPHONEHH">
+  <location EndPos="126" StartPos="126" width="1"/>
+  <labl>House has telephone (household record)</labl>
+  <txt><![CDATA[HHPHONEHH (HV221) indicates whether any member of the household has a telephone (based on information from the household record).   
+
+The information in HHPHONEHH is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable (with visitors coded "2") when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Possessions Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="MOBPHONE" dcml="0" files="ExtractData" intrvl="discrete" name="MOBPHONE">
+  <location EndPos="127" StartPos="127" width="1"/>
+  <labl>HH has mobile phone</labl>
+  <txt><![CDATA[MOBPHONE indicates whether the household had a mobile/cellular telephone.
+
+The related variable HHPHONE indicates whether the household had a telephone, regardless of the type of phone, or had a non-mobile phone.
+
+The information in MOBPHONE is taken from the household record and applies to regular household residents, not temporary visitors. Researchers may wish to exclude visitors using the RESIDENT variable (with visitors coded "2") when women, children, or births are the unit of analysis, and using the HHRESIDENT variable when household members are the unit of analysis.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Possessions Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="PC" dcml="0" files="ExtractData" intrvl="discrete" name="PC">
+  <location EndPos="128" StartPos="128" width="1"/>
+  <labl>HH has personal computer</labl>
+  <txt><![CDATA[PC (HV243E) indicates whether the household had a personal computer at home.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Possessions Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="INTERNET" dcml="0" files="ExtractData" intrvl="discrete" name="INTERNET">
+  <location EndPos="129" StartPos="129" width="1"/>
+  <labl>HH has Internet access</labl>
+  <txt><![CDATA[INTERNET indicates whether the household had an Internet connection at home or Internet access.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>6</catValu>
+    <labl>Non-resident</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Possessions Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="WEALTHQRURBHH" dcml="0" files="ExtractData" intrvl="discrete" name="WEALTHQRURBHH">
+  <location EndPos="130" StartPos="130" width="1"/>
+  <labl>Household wealth index quintiles for urban/rural (from HH file)</labl>
+  <txt><![CDATA[WEALTHQRURBHH (HV270A) refers to the relative wealth (urban- and rural-specific) of the household where the person lives, divided into quintiles from the poorest (code "1") to the richest (code "5"). A code of "1" indicates the person's household is in the poorest quintile of rural households or the poorest quintile of urban households. The related variable URBANHH (HV025) indicates whether the person's de facto residence was in an urban or rural location.
+
+According to the DHS Recode Manual for Phase VII, 
+As a response to criticism that a single wealth index […] is too urban in its construction and not able to distinguish the poorest of the poor from other poor households, this variable provides an urban- and rural-specific wealth index.For additional information about the calculation and meaning of the wealth index, users should consult the Wealth Index summary from The DHS Program website and/or the DHS Comparative Report on The DHS Wealth Index.
+
+WEALTHQRURBHH is based on information from the household record but is available for all units of analysis, through linking the household survey information to the records for women, children, births, and men, as well as for household members, in IPUMS DHS.
+
+The complementary variable WEALTHSRURBHH (HV271A) reports the wealth index factor score for urban/rural for the person's household in a specific sample.  The variables used to calculate wealth index quintiles and the level of wealth implied by a specific ranking are sample-specific.  See Comparability.]]></txt>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Poorest</labl>
+  </catgry>
+  <catgry>
+    <catValu>2</catValu>
+    <labl>Poorer</labl>
+  </catgry>
+  <catgry>
+    <catValu>3</catValu>
+    <labl>Middle</labl>
+  </catgry>
+  <catgry>
+    <catValu>4</catValu>
+    <labl>Richer</labl>
+  </catgry>
+  <catgry>
+    <catValu>5</catValu>
+    <labl>Richest</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <concept vocab="IPUMS">Wealth index Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+<var ID="INSHHCOVER" dcml="0" files="ExtractData" intrvl="discrete" name="INSHHCOVER">
+  <location EndPos="131" StartPos="131" width="1"/>
+  <labl>Covered by health insurance</labl>
+  <txt><![CDATA[INSHHCOVER indicates whether the household member is covered by health insurance.]]></txt>
+  <catgry>
+    <catValu>0</catValu>
+    <labl>No</labl>
+  </catgry>
+  <catgry>
+    <catValu>1</catValu>
+    <labl>Yes</labl>
+  </catgry>
+  <catgry>
+    <catValu>7</catValu>
+    <labl>Don't know</labl>
+  </catgry>
+  <catgry>
+    <catValu>8</catValu>
+    <labl>Missing</labl>
+  </catgry>
+  <catgry>
+    <catValu>9</catValu>
+    <labl>NIU (not in universe)</labl>
+  </catgry>
+  <concept vocab="IPUMS">Insurance, general Variables -- PERSON</concept>
+  <varFormat schema="other" type="numeric"/>
+</var>
+</dataDscr>
+</codeBook>
